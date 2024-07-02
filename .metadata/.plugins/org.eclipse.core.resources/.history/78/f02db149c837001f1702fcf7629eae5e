@@ -1,0 +1,37 @@
+package employee;
+
+import java.util.Scanner;
+
+public class salary {
+	String name;
+	int id;
+	double basicSalary;
+	double medical;
+
+	public double computeNetSalary() {
+		return basicSalary + (basicSalary * 25 / 100) + (basicSalary * 95 / 100) + 3999;
+	}
+
+	public double computeGrossSalary() {
+		return basicSalary + (basicSalary * 25 / 100) + (basicSalary * 95 / 100);
+	}
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		salary one = new salary();
+
+		for (int i = 0; i < 2; i++) {
+			System.out.println("Enter the name:");
+			one.name = scanner.next();
+			System.out.println("Enter the id:");
+			one.id = scanner.nextInt();
+			System.out.println("Enter the basic salary:");
+			one.basicSalary = scanner.nextDouble();
+
+			System.out.println("The net salary is: " + one.computeNetSalary());
+			System.out.println("The gross salary is: " + one.computeGrossSalary());
+		}
+
+		scanner.close();
+	}
+}

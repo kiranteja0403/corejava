@@ -1,0 +1,21 @@
+package prgm1;
+
+public class car {
+	public String name;
+	public int length;
+	public byte no_of_wheels;
+	public byte no_of_gears;
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+}
+
+
+	@Override
+	public String toString() {
+		return "car [name=" + name + ", length=" + length + ", no_of_wheels=" + no_of_wheels + ", no_of_gears="
+				+ no_of_gears + "]";
+	}
+
+}

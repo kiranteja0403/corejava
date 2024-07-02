@@ -1,0 +1,17 @@
+package prgm1;
+
+public class Student {
+	int id;
+	String name;
+	int sub1;
+	int sub2, sub3;
+	int total;
+	int avg;
+	int percentage;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

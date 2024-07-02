@@ -1,0 +1,37 @@
+package prgm1;
+
+import java.util.Scanner;
+
+public class Student {
+	int id;
+	String name;
+	int sub1;
+	int sub2, sub3;
+	int total;
+	int avg;
+	int percentage;
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		Student student = new Student();
+		System.out.println("Enter your ID");
+		student.id = scanner.nextInt();
+
+		System.out.println("Enter your Name");
+		student.name = scanner.next();
+
+		System.out.println("Enter your Subject 1");
+		student.sub1 = scanner.nextInt();
+
+		System.out.println("Enter your Subject 2");
+		student.sub2 = scanner.nextInt();
+
+		System.out.println("Enter your Subject 3");
+		student.sub3 = scanner.nextInt();
+		student.total = student.sub1 + student.sub2 + student.sub3;
+		System.out.println(student.total);
+
+	}
+
+}
